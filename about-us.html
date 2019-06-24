@@ -1,351 +1,120 @@
-<html>
+<!DOCTYPE HTML>
+
+<html lang="en">
 	<head>
 		<title>Wunderlist 2.0</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
 	</head>
-	<body class="is-preload">
+	<body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<script defer="defer" src="./components/filter/Filter.js"></script>
+		<script defer="defer" src="./components/homepage/homepage.js"></script>
+		<script defer="defer" src="./components/topNav/topNav.js"></script>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+	<nav class="nav-bar">
+		<div class="logo">
+			<a href="index.html"><img src="images/wl_logo_wht.png" alt="Wunderlist 2.0 Company logo."></a>
+		</div>
+		<div class= "anchors">
+			 <a href="index.html">Home</a>
+			 <a href="about-us.html">About Us</a>
+			 <a href="#">Blog</a>
+			 <a href="#">Contact Us</a>
+		</div>
+	</nav>
 
-        <section>
-          <div class = "nav">
-
-
-          </div>
-        </section>
-
-
-        <!-- TOP BAR COMPONENT -->
-        <div class="top-bar">
-          <div class="container">
-            <div class="container-left">
-              <span>TOPICS</span><span>SEARCH</span>
-            </div>
-            <div class="container-center">
-              <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
-            </div>
-            <div class="container-right">
-              <span>LOG IN</span>
-            </div>
-          </div>
-        </div>
-
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Welcome to Wunderlist 2.0</h1>
-							<p class="major">Stop listing. Starting Wundering.</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="/images/Screen Shot 2019-06-22 at 3.00.17 PM.png" alt="screenshot of todo list" />
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>A Life Lived Broad</h2>
-							<p>This is my personal blog where I write on the topics of entrepreneurship and parenthood. And really anything else that catches my curiosity and interest.</p>
-							<ul class="actions stacked">
-								<li><a href="www.avnipatelthompson.com" class="button">Take a look</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/1462626_10154857429675297_660886870767321708_o (1).jpg" alt="image of my elder daughter holding my younger daughter" />
-						</div>
-					</section>
-
-          <!-- TABS COMPONENT -->
-    <div class="tabs">
-      <div class="topics">
-        <span class="title">The Team:</span>
-        <div data-tab="all" class="tab active-tab">ALL</div>
-        <div data-tab="multilingual" class="tab">multilingual</div>
-        <div data-tab="outdoor lovers" class="tab">outdoor lovers</div>
-        <div data-tab="node" class="tab">NODE.JS</div>
-        <div data-tab="jquery" class="tab">jQUERY</div>
-        <div data-tab="bootstrap" class="tab">BOOTSTRAP</div>
-      </div>
-    </div>
+	<header>
 
 
-					    <!-- Gallery -->
-					      <div class="gallery style2 medium lightbox onscroll-fade-in">
-					        <article>
-					          <a href="images/gallery/fulls/01.jpg" class="image">
-					            <img src="images/gallery/thumbs/01.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Ipsum Dolor</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/02.jpg" class="image">
-					            <img src="images/gallery/thumbs/02.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Feugiat Lorem</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/03.jpg" class="image">
-					            <img src="images/gallery/thumbs/03.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Magna Amet</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/04.jpg" class="image">
-					            <img src="images/gallery/thumbs/04.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Sed Tempus</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/05.jpg" class="image">
-					            <img src="images/gallery/thumbs/05.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Ultrices Magna</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/06.jpg" class="image">
-					            <img src="images/gallery/thumbs/06.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Sed Tempus</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/07.jpg" class="image">
-					            <img src="images/gallery/thumbs/07.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Ipsum Lorem</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/08.jpg" class="image">
-					            <img src="images/gallery/thumbs/08.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Magna Risus</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/09.jpg" class="image">
-					            <img src="images/gallery/thumbs/09.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Tempus Dolor</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/10.jpg" class="image">
-					            <img src="images/gallery/thumbs/10.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Sed Etiam</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/11.jpg" class="image">
-					            <img src="images/gallery/thumbs/11.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Magna Lorem</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					        <article>
-					          <a href="images/gallery/fulls/12.jpg" class="image">
-					            <img src="images/gallery/thumbs/12.jpg" alt="" />
-					          </a>
-					          <div class="caption">
-					            <h3>Ipsum Dolor</h3>
-					            <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-					            <ul class="actions fixed">
-					              <li><span class="button small">Details</span></li>
-					            </ul>
-					          </div>
-					        </article>
-					      </div>
+	</header>
 
-					  </section>
+	<main>
+		<section class="team">
+			<h3>Meet the Team Behind Wunderlist 2.0</h3>
+			<p>
+				Teamwork makes the dream work and here are the talented people working to make to-dos effortless for  you.
+			</p>
+		</section>
+		<section class="filters">
+			<!-- TABS COMPONENT -->
+  		<div class="topics">
+      	<span class="title">Things we love:</span>
+      	<div data-tab="all" class="filter active-filter">All</div>
+      	<div data-tab="dogs" class="filter">Dogs</div>
+      	<div data-tab="travel" class="filter">Travel</div>
+      	<div data-tab="laguages" class="filter">Languages</div>
+    	  <div data-tab="homecooked-meals" class="filter">Homecooked Meals</div>
+    	  <div data-tab="sports" class="filter">Sports</div>
+  	  </div>
+  	</div>
+		</section>
 
-					<!-- Six -->
-					  <section class="wrapper style1 align-center">
-					    <div class="inner">
-					      <h2>Ipsum sed consequat</h2>
-					      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-					      <div class="items style1 medium onscroll-fade-in">
-					        <section>
-					          <span class="icon style2 major fa-diamond"></span>
-					          <h3>Lorem</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-save"></span>
-					          <h3>Ipsum</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-bar-chart"></span>
-					          <h3>Dolor</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-wifi"></span>
-					          <h3>Amet</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-cog"></span>
-					          <h3>Magna</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-paper-plane"></span>
-					          <h3>Tempus</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-desktop"></span>
-					          <h3>Aliquam</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-refresh"></span>
-					          <h3>Elit</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-hashtag"></span>
-					          <h3>Morbi</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-bolt"></span>
-					          <h3>Turpis</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-envelope"></span>
-					          <h3>Ultrices</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					        <section>
-					          <span class="icon style2 major fa-leaf"></span>
-					          <h3>Risus</h3>
-					          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-					        </section>
-					      </div>
-					    </div>
-					  </section>
+	<section class="headshots">
+
+	<div class = "headshot" data-tab="dogs">
+		<div class="name">Jonathan Picazo</div>
+		<div class="img-container">
+			<img src="#" />
+		</div>
+		</div>
 
 
 
-				<!-- Seven: Show form upon click -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Join Us</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Your name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Your email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Why do you want to tame to-dos?</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
 
-						</div>
-					</section>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://twitter.com/APatelThompson" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/apatelthompson/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
 
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</section>
+
+	<div class = "headshot" data-tab="travel">
+		<div class="name">Avni Patel Thompson</div>
+		<div class="img-container">
+			<img src="images/headshot 279.jpg"/>
+		</div>
+		</div>
+
+	<div class = "headshot" data-tab="dogs">
+		<div class="name">Richard Lawson</div>
+		<div class="img-container">
+			<img src="#" />
+		</div>
+		</div>
+
+	<div class = "headshot" data-tab="dogs">
+		<div class="name">Katie Felton</div>
+		<div class="img-container">
+			<img src="#" />
+		</div>
+		</div>
+
+	<div class = "headshot" data-tab="dogs">
+		<div class="name">Alan Fischbach</div>
+		<div class="img-container">
+			<img src="#" />
+		</div>
+		</div>
+	</section>
+
+
+	</main>
+
+
+	<section class="contact">
+    <h3>WunderHQ</h3>
+    <address>123 Way 456 Street
+      <br>Somewhere, USA
+      <br><p class="phone">1 (888) 888-8888</p>
+      <br><a class="email" href='wunder@wunderlist.com'>wunder@wunderlist.com</a>
+    </address>
+	</section>
+
+
+	<footer>
+<p class= "copyright">WunderList 2.0 2019</p>
+	</footer>
 
 	</body>
 </html>
