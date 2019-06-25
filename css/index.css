@@ -319,6 +319,9 @@ img {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  padding: 40px 0px;
+  margin: 40px 20px;
+  border-bottom: 0.5px solid lightgrey;
 }
 @media (max-width: 500px) {
   .home .section1 {
@@ -330,6 +333,7 @@ img {
 .home .section1 .sectiontext {
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
   width: 45%;
 }
 .home .section1 .intro-img {
@@ -339,7 +343,9 @@ img {
 .home .section2 {
   display: flex;
   justify-content: content;
-  margin: 80px 0;
+  padding: 100px 0px;
+  margin: 40px 20px;
+  border-bottom: 0.5px solid lightgrey;
 }
 @media (max-width: 500px) {
   .home .section2 {
@@ -348,7 +354,13 @@ img {
     width: 100%;
   }
 }
-.home .section2 .intro-img {
+.home .section2 .sectiontext {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  width: 50%;
+}
+.home .section2 .demo-GIF {
   width: 45%;
   height: 45%;
 }
@@ -356,6 +368,228 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0px;
+  margin: 40px 20px;
+}
+.home .section3 .steps {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .home .section3 .steps {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .section3 .steps .subsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-section {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ED7470;
+  color: #FFFFFF;
+}
+.bottom-section .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-section .contact .email {
+  text-decoration: none;
+}
+.bottom-section .copyright {
+  display: flex;
+  justify-content: center;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 800px;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.nav-bar .logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+.nav-bar .anchors {
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-bar .anchors a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #36454f;
+}
+.nav-bar .anchors a:hover {
+  color: #ED7470;
+  cursor: pointer;
+}
+.nav-bar .nav-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+.nav-bar .nav-cta .login-cta {
+  background-color: #FFFFFF;
+  color: #4694ea;
+  font-family: Lato;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+}
+.nav-bar .nav-cta .login-cta:hover {
+  background-color: #4694ea;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.nav-bar .nav-cta .sign-up-cta {
+  background-color: #FFFFFF;
+  color: #ED7470;
+  border: 1px solid #ED7470;
+  font-family: Lato;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.nav-bar .nav-cta .sign-up-cta:hover {
+  background-color: #ED7470;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.home {
+  margin: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
+.home .hero {
+  display: flex;
+  margin: 40px 0;
+  padding: 100px 0;
+  border-bottom: 0.5px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .home .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+  }
+}
+.home .hero .hero-text {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .hero .hero-text h1 {
+  margin: 10px;
+}
+.home .hero .hero-text h4 {
+  margin: 10px;
+}
+.home .hero .hero-text .main-cta {
+  background-color: #ED7470;
+  color: #FFFFFF;
+  font-family: Lato;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  padding: 15px 20px;
+  width: 40%;
+}
+.home .hero .hero-text .main-cta:hover {
+  background-color: #FFFFFF;
+  color: #ED7470;
+  border: 1px solid #ED7470;
+  cursor: pointer;
+}
+.home .hero .hero-image {
+  max-width: 45%;
+  height: auto;
+}
+.home .section1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 40px 0px;
+  margin: 40px 20px;
+  border-bottom: 0.5px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .home .section1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.home .section1 .sectiontext {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  width: 45%;
+}
+.home .section1 .intro-img {
+  width: 45%;
+  height: 45%;
+}
+.home .section2 {
+  display: flex;
+  justify-content: content;
+  padding: 100px 0px;
+  margin: 40px 20px;
+  border-bottom: 0.5px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .home .section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.home .section2 .sectiontext {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  width: 50%;
+}
+.home .section2 .demo-GIF {
+  width: 45%;
+  height: 45%;
+}
+.home .section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px;
+  margin: 40px 20px;
 }
 .home .section3 .steps {
   display: flex;
