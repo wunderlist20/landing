@@ -2,22 +2,7 @@
 @import "mixins.less";
 @import "reset.less";
 @import "global.less";
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 
-* {
-  box-sizing: border-box;
-}
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  .flex(none, center, column);
-  font-family: 'PT Sans', sans-serif;
-}
-
-@import './components/topNav/topNav';
-@import './components/filter/Filter';
-@import './components/homepage/homepage';
+@import '../components/filter/Filter.less';
+@import '../components/homepage/homepage.less';
