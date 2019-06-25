@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
 	</head>
 	<body>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -14,17 +14,22 @@
 		<script defer="defer" src="./components/homepage/homepage.js"></script>
 		<script defer="defer" src="./components/topNav/topNav.js"></script>
 
-	<nav class="nav-bar">
-		<div class="logo">
-			<a href="index.html"><img src="images/wl_logo_wht.png" alt="Wunderlist 2.0 Company logo."></a>
-		</div>
-		<div class= "anchors">
-			 <a href="index.html">Home</a>
-			 <a href="about-us.html">About Us</a>
-			 <a href="#">Blog</a>
-			 <a href="#">Contact Us</a>
-		</div>
-	</nav>
+		<nav class="nav-bar">
+			<div class="logo">
+				<a href="index.html"><img src="images/wl_logo_wht.png" alt="Wunderlist 2.0 Company logo."></a>
+			</div>
+			<div class= "anchors">
+				 <a href="index.html" class="nav-link">HOME</a>
+				 <a href="about-us.html" class="nav-link">ABOUT US</a>
+				 <a href="#" class="nav-link">BLOG</a>
+				 <a href="#" class="nav-link">CONTACT US</a>
+				 <a href="#" class="nav-hamburger-button"><img class="nav-hamburger-button-img" src="#" alt "open mobile menu"></a>
+			</div>
+			<div class="nav-cta">
+				<button class="login-cta">Login</button>
+				<button class="sign-up-cta">Sign-up</button>
+			</div>
+		</nav>
 
 	<header>
 		<section class="team">
@@ -69,21 +74,31 @@
 		<div class="img-container">
 			<img src="#" />
 		</div>
-		</div>
+	</div>
 
 	<div class = "headshot" data-tab="dogs">
 		<div class="name">Katie Felton</div>
 		<div class="img-container">
 			<img src="#" />
 		</div>
-		</div>
+	</div>
 
 	<div class = "headshot" data-tab="sports">
-		<div class="name">Alan Fischbach</div>
+		<div class="name">Harjoth Khara</div>
 		<div class="img-container">
 			<img src="#" />
 		</div>
-		</div>
+	</div>
+
+	<div class = "headshot" data-tab="sports">
+			<div class="name">Alan Fischbach</div>
+			<div class="img-container">
+				<img src="#" />
+			</div>
+	</div>
+
+
+
 	</section>
 
 

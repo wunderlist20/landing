@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="container">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 		<script defer="defer" src="./components/filter/Filter.js"></script>
 		<script defer="defer" src="./components/homepage/homepage.js"></script>
@@ -19,26 +19,29 @@
 			<a href="index.html"><img src="images/wl_logo_wht.png" alt="Wunderlist 2.0 Company logo."></a>
 		</div>
 		<div class= "anchors">
-			 <a href="index.html">Home</a>
-			 <a href="about-us.html">About Us</a>
-			 <a href="#">Blog</a>
-			 <a href="#">Contact Us</a>
+			 <a href="index.html" class="nav-link">HOME</a>
+			 <a href="about-us.html" class="nav-link">ABOUT US</a>
+			 <a href="#" class="nav-link">BLOG</a>
+			 <a href="#" class="nav-link">CONTACT US</a>
+			 <a href="#" class="nav-hamburger-button"><img class="nav-hamburger-button-img" src="#" alt "open mobile menu"></a>
+		</div>
+		<div class="nav-cta">
+			<button class="login-cta">LOGIN</button>
+			<button class="sign-up-cta">SIGN-UP</button>
 		</div>
 	</nav>
 
-	<home>
+<main class="home">
 	<header class="hero">
-		<div class=hero-text>
+		<div class="hero-text">
 			<h1>Welcome to Wunderlist 2.0</h1>
 			<h4>Be prepared to be amazed</h4>
-			<button>Get Started</button>
+			<button class="main-cta">GET STARTED</button>
 		</div>
 		<div class="hero-image">
 			<img class="intro-img" src="images/undraw_noted_pc9f.png" alt="illustration of woman on computer">
 		</div>
 	</header>
-
-	<main>
 
 		<section class="section1">
 			<div class="sectiontext">
@@ -51,53 +54,58 @@
 		</section>
 
 		<section class="section2">
-			<h2>The Wunder Way</h2>
-			<p>
-			 This is why Wunderlist 2.0 is so awesome.
-			</p>
+			<div class="sectiontext">
+				<h2>The Wunder Way</h2>
+				<p>
+			 		This is why Wunderlist 2.0 is so awesome.
+				</p>
+			</div>
 			<img class="demo-GIF" src="#" alt="GIF of entering to-do items">
 		</section>
 
 		<section class="section3">
 			<h2>Here's How it Works</h2>
-			<div class="subsection1">
-				<img class="step-1" src="#" alt="step one">
-			<h4>Step 1</h4>
-			<p>
-			 Here's how you start.
-		 </p>
-		 	</div>
-			<div class="subsection2">
-				<img class="step-2" src="images/undraw_chore_list_iof3.png" alt="illustration of a phone">
-			<h4>Step 2</h4>
-			<p>
-			 Here's the next thing.
-		 </p>
-		 	</div>
-			<div class="subsection3">
-				<img class="step-3" src="images/undraw_play_time_7k7b.png" alt="illustration of dad holding daughter">
-			<h4>Step 3</h4>
-			<p>
-			 Here's the last thing.
-		 </p>
-		 	</div>
+			<div class="steps">
+				<div class="subsection">
+					<img class="step-1" src="images/undraw_chore_list_iof3.png" alt="step one">
+				<h4>Step 1</h4>
+				<p>
+			 		Here's how you start.
+		 		</p>
+		 		</div>
+				<div class="subsection">
+					<img class="step-2" src="images/undraw_chore_list_iof3.png" alt="illustration of a phone">
+					<h4>Step 2</h4>
+					<p>
+			 			Here's the next thing.
+		 			</p>
+		 		</div>
+				<div class="subsection">
+					<img class="step-3" src="images/undraw_play_time_7k7b.png" alt="illustration of dad holding daughter">
+					<h4>Step 3</h4>
+					<p>
+			 			Here's the last thing.
+		 			</p>
+		 		</div>
+			</div>
 		</section>
 	</main>
 
-
-	<section class="contact">
-    <h3>WunderHQ</h3>
-    <address>123 Way 456 Street
+ <div class="bottom-section">
+		<section class="contact">
+    	<h4>WunderHQ</h4>
+    	<address><br>123 Way 456 Street
       <br>Somewhere, USA
       <br><p class="phone">1 (888) 888-8888</p>
       <br><a class="email" href='wunder@wunderlist.com'>wunder@wunderlist.com</a>
-    </address>
-	</section>
-</home>
+    	</address>
+		</section>
 
-	<footer>
+
+		<footer>
 		<p class= "copyright">WunderList 2.0 2019</p>
-	</footer>
+		</footer>
+	</div>
 
 	</body>
 </html>
