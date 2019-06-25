@@ -156,19 +156,23 @@ h5 {
   font-family: 'Lato', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
+  font-weight: lighter;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   padding-bottom: 10px;
+  font-weight: lighter;
 }
 h3 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+  font-weight: lighter;
 }
 h4 {
   font-size: 2.2rem;
   padding-bottom: 10px;
+  font-weight: lighter;
 }
 p {
   line-height: 1.8;
@@ -213,11 +217,12 @@ img {
 }
 .nav-bar .anchors a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #36454f;
 }
 .nav-bar .anchors a:hover {
-  color: #fe0003;
+  color: #ED7470;
+  cursor: pointer;
 }
 .nav-bar .nav-cta {
   display: flex;
@@ -229,18 +234,31 @@ img {
   background-color: #FFFFFF;
   color: #4694ea;
   font-family: Lato;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border-radius: 15px;
   padding: 15px;
   border: none;
 }
-.nav-bar .nav-cta .sign-up-cta {
-  background-color: #fe0003;
+.nav-bar .nav-cta .login-cta:hover {
+  background-color: #4694ea;
   color: #FFFFFF;
-  font-family: Lato;
-  font-size: 1.5rem;
   border-radius: 20px;
   padding: 10px 20px;
+  cursor: pointer;
+}
+.nav-bar .nav-cta .sign-up-cta {
+  background-color: #FFFFFF;
+  color: #ED7470;
+  border: 1px solid #ED7470;
+  font-family: Lato;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.nav-bar .nav-cta .sign-up-cta:hover {
+  background-color: #ED7470;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 .home {
   margin: 10px;
@@ -252,6 +270,9 @@ img {
 }
 .home .hero {
   display: flex;
+  margin: 40px 0;
+  padding: 100px 0;
+  border-bottom: 0.5px solid lightgrey;
 }
 @media (max-width: 500px) {
   .home .hero {
@@ -276,13 +297,19 @@ img {
   margin: 10px;
 }
 .home .hero .hero-text .main-cta {
-  background-color: #fe0003;
+  background-color: #ED7470;
   color: #FFFFFF;
   font-family: Lato;
-  font-size: 1.5rem;
-  border-radius: 15px;
-  padding: 15px;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  padding: 15px 20px;
   width: 40%;
+}
+.home .hero .hero-text .main-cta:hover {
+  background-color: #FFFFFF;
+  color: #ED7470;
+  border: 1px solid #ED7470;
+  cursor: pointer;
 }
 .home .hero .hero-image {
   max-width: 45%;
@@ -290,6 +317,7 @@ img {
 }
 .home .section1 {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
 }
 @media (max-width: 500px) {
@@ -311,6 +339,7 @@ img {
 .home .section2 {
   display: flex;
   justify-content: content;
+  margin: 80px 0;
 }
 @media (max-width: 500px) {
   .home .section2 {
@@ -349,7 +378,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #4694ea;
+  background-color: #ED7470;
   color: #FFFFFF;
 }
 .bottom-section .contact {

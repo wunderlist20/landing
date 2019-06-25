@@ -17,7 +17,7 @@
   .logo {
     width: 100px;
     height: auto;
-    margin-right: 20px; 
+    margin-right: 20px;
     }
 
   .anchors {
@@ -28,11 +28,12 @@
 
     a {
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: @text-color;
 
       &:hover {
         color: @highlight-color;
+        cursor: pointer;
       }
     }
   }
@@ -47,22 +48,33 @@
         background-color: @header-color;
         color: @background-color;
         font-family: Lato;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         border-radius: 15px;
         padding: 15px;
         border: none;
+
+        &:hover {
+          background-color: @background-color;
+          color: @header-color;
+          border-radius: 20px;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
       }
 
       .sign-up-cta {
-        background-color: @highlight-color;
-        color: @header-color;
+        background-color: @header-color;
+        color: @highlight-color;
+        border: 1px solid @highlight-color;
         font-family: Lato;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         border-radius: 20px;
         padding: 10px 20px;
 
         &:hover {
-
+          background-color: @highlight-color;
+          color: @header-color;
+          cursor: pointer;
         }
 
 
@@ -83,6 +95,9 @@
 
    .hero {
    display: flex;
+   margin: 40px 0;
+   padding: 100px 0;
+   border-bottom: 0.5px solid lightgrey;
 
     @media @mobile {
       .mobile-stack();
@@ -107,10 +122,17 @@
         background-color: @highlight-color;
         color: @header-color;
         font-family: Lato;
-        font-size: 1.5rem;
-        border-radius: 15px;
-        padding: 15px;
+        font-size: 1.4rem;
+        border-radius: 20px;
+        padding: 15px 20px;
         width: 40%;
+
+        &:hover {
+          background-color: @header-color;
+          color: @highlight-color;
+          border: 1px solid @highlight-color;
+          cursor: pointer;
+        }
       }
 
     }
@@ -126,6 +148,7 @@
 
   .section1 {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
 
     @media @mobile {
@@ -150,6 +173,7 @@
   .section2 {
     display: flex;
     justify-content: content;
+    margin: 80px 0;
 
     @media @mobile {
       display: flex;
@@ -197,7 +221,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: @background-color;
+    background-color: @highlight-color;
     color: @header-color;
 
 
