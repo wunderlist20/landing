@@ -45,8 +45,7 @@
     width: 25%;
 
     @media @mobile {
-      width: 40%;
-
+      width: 50%;
     }
 
       .login-cta {
@@ -65,6 +64,10 @@
           padding: 10px 20px;
           cursor: pointer;
         }
+
+        @media @mobile {
+          width: 70%;
+        }
       }
 
       .sign-up-cta {
@@ -81,16 +84,21 @@
           color: @header-color;
           cursor: pointer;
         }
+
+        @media @mobile {
+          width: 70%;
+        }
       }
   }
 }
 
 
 .home {
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
 
   @media @mobile {
-    width: 90%;
+    width: 100%;
    }
 
 
@@ -110,13 +118,15 @@
     }
 
     .hero-text {
-      max-width: 45%;
+      width: 45%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
 
       @media @mobile {
-        width: 100;
+        .width-100();
+        align-content: center;
       }
 
 
@@ -148,7 +158,6 @@
           cursor: pointer;
         }
       }
-
     }
 
     .hero-image {
@@ -159,8 +168,6 @@
         display: none;
       }
     }
-
-
    }
 
 
@@ -224,6 +231,7 @@
 
       @media @mobile {
         .width-100();
+        margin-top: 10px;
       }
 
       h2 {
@@ -240,6 +248,7 @@
       @media @mobile {
         .width-100();
         height: auto;
+        margin-top: 20px;
       }
     }
   }
@@ -317,6 +326,12 @@
     .carousel-section {
       display: flex;
       align-items: center;
+      justify-content: center;
+
+      @media @mobile {
+        .width-100();
+
+      }
 
     }
 
@@ -350,7 +365,6 @@
       justify-content: center;
       align-items: center;
       font-size: 1.5rem;
-
 
       .phone {
         font-size: 1.5rem;
