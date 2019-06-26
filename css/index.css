@@ -371,6 +371,7 @@ img {
   padding: 100px 0px;
   margin: 40px 20px 60px 20px;
   width: 100%;
+  border-bottom: 0.5px solid lightgrey;
 }
 .home .section3 .steps {
   display: flex;
@@ -402,6 +403,21 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.home .carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .carousel .left-button {
+  font-size: 5rem;
+}
+.home .carousel .right-button {
+  font-size: 5rem;
+}
+.home .carousel .carousel-image {
+  width: 40%;
 }
 .bottom-section {
   height: 300px;
