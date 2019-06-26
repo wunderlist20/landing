@@ -208,6 +208,7 @@
     align-items: center;
     padding: 100px 0px;
     margin: 40px 20px 60px 20px;
+    width:100%;
 
     .steps {
       display: flex;
@@ -216,6 +217,26 @@
     @media @mobile {
       display: flex;
       flex-direction: column;
+
+    .subsection {
+      display: flex;
+      flex-direction: column-reverse;
+      border: 1px solid lightgray;
+
+      .section-text {
+        background-color: @highlight-color;
+        color: @header-color;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+      }
+
+    }
+
     }
 
 
