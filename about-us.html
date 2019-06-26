@@ -12,8 +12,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 		<script defer="defer" src="./components/filter/Filter.js"></script>
 		<script defer="defer" src="./components/homepage/homepage.js"></script>
-		<script defer="defer" src="./components/topNav/topNav.js"></script>
 
+	<div class="container">
 		<nav class="nav-bar">
 			<div class="logo">
 				<a href="index.html"><img src="images/wl_logo_wht.png" alt="Wunderlist 2.0 Company logo."></a>
@@ -26,105 +26,107 @@
 				 <a href="#" class="nav-hamburger-button"><img class="nav-hamburger-button-img" src="#" alt "open mobile menu"></a>
 			</div>
 			<div class="nav-cta">
-				<button class="login-cta">Login</button>
-				<button class="sign-up-cta">Sign-up</button>
+				<button class="login-cta">LOGIN</button>
+				<button class="sign-up-cta">SIGN-UP</button>
 			</div>
 		</nav>
 
 	<header>
 		<section class="team">
-			<h3>Meet the Team Behind Wunderlist 2.0</h3>
+			<h2>Meet the Team Behind Wunderlist 2.0</h2>
 			<p>
-				Teamwork makes the dream work and here are the talented people working to make to-dos effortless for  you.
+				Teamwork makes the dream work and here are the talented people working to make to-dos effortless for you. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</section>
-
 	</header>
-		<main>
+
+		<main class="home">
 			<section class="filters">
   			<div class="topics">
-      		<span class="title">Things we love:</span>
-      		<div data-tab="all" class="filter active-filter">All</div>
-      		<div data-tab="dogs" class="filter">Dogs</div>
-      		<div data-tab="travel" class="filter">Travel</div>
-      		<div data-tab="laguages" class="filter">Languages</div>
-    	  	<div data-tab="homecooked-meals" class="filter">Homecooked Meals</div>
-    	  	<div data-tab="sports" class="filter">Sports</div>
-  	  	</div>
+					<span class="title">THINGS WE LOVE:</span>
+      		<div data-tab="all" class="filter active-filter">SHOW ALL</div>
+      		<div data-tab="dogs" class="filter">DOGS</div>
+      		<div data-tab="travel" class="filter">TRAVEL</div>
+      		<div data-tab="laguages" class="filter">LANGUAGES</div>
+    	  	<div data-tab="sports" class="filter">SPORTS</div>
+					<div data-tab="reading" class="filter">READING</div>
+					<div data-tab="music" class="filter">MUSIC</div>
+				</div>
   		</div>
 		</section>
 
 	<section class="headshots">
 	<div class = "headshot" data-tab="dogs">
 		<div class="name">Jonathan Picazo</div>
-		<div class="img-container">
-			<img src="#" />
+		<div class="headshot-image">
+			<img src="images/slack-profile.png" />
 		</div>
 	</div>
 
 	<div class = "headshot" data-tab="travel">
 		<div class="name">Avni Patel Thompson</div>
-		<div class="img-container">
-			<img src="images/headshot 279.jpg"/>
+		<div class="headshot-image">
+			<img src="images/headshot 279.png"/>
 		</div>
 		</div>
 
-	<div class = "headshot" data-tab="homecooked-meals">
+	<!-- <div class = "headshot" data-tab="homecooked-meals">
 		<div class="name">Richard Lawson</div>
-		<div class="img-container">
+		<div class="headshot-image">
 			<img src="#" />
 		</div>
-	</div>
+	</div> -->
 
-	<div class = "headshot" data-tab="dogs">
+	<div class = "headshot" data-tab="music">
 		<div class="name">Katie Felton</div>
-		<div class="img-container">
-			<img src="#" />
+		<div class="headshot-image">
+			<img src="images/april19.png" />
 		</div>
 	</div>
 
 	<div class = "headshot" data-tab="sports">
 		<div class="name">Harjoth Khara</div>
-		<div class="img-container">
-			<img src="#" />
+		<div class="headshot-image">
+			<img src="images/Screen Shot 2019-06-25 at 8.22.00 AM.png" />
 		</div>
 	</div>
 
-	<div class = "headshot" data-tab="sports">
-			<div class="name">Alan Fischbach</div>
-			<div class="img-container">
-				<img src="#" />
-			</div>
-	</div>
-
-
 
 	</section>
-
-
-	</main>
 
 	<section class="apply">
-		<h2>Join Us!</h2>
-		<p>
-			Want to join the team? Tell us wh.
-		</p>
-	</section>
+			<h2>Join Us!</h2>
+			<p>
+			Want to join the team? Tell us who you are and why you love making to-dos easy.
+			</p>
+			<form>
+  			First name:<br>
+  			<input type="text" name="firstname"><br>
+  			Last name:<br>
+  			<input type="text" name="lastname"><br>
+				Tell us why:<br>
+  			<input class="why" type="why" name="tell me why"><br>
+				<input class="submit-button" type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+</div>
+
+	<div class="bottom-section">
+		 <section class="contact">
+			 <h4>WunderHQ</h4>
+			 <address><br>123 Way 456 Street
+			 <br>Somewhere, USA
+			 <br><p class="phone">1 (888) 888-8888</p>
+			 <br><a class="email" href='wunder@wunderlist.com'>wunder@wunderlist.com</a>
+		 </address>
+		 </section>
 
 
-	<section class="contact">
-    <h3>WunderHQ</h3>
-    <address>123 Way 456 Street
-      <br>Somewhere, USA
-      <br><p class="phone">1 (888) 888-8888</p>
-      <br><a class="email" href='wunder@wunderlist.com'>wunder@wunderlist.com</a>
-    </address>
-	</section>
-
-
-	<footer>
-<p class= "copyright">WunderList 2.0 2019</p>
-	</footer>
+		 <footer>
+		 <p class= "copyright">WunderList 2.0 2019</p>
+		 </footer>
+	 </div>
 
 	</body>
 </html>
