@@ -2,16 +2,21 @@ class Carousel {
     constructor(item) {
 
         this.item = item;
-        this.rightBtn = item.querySelector(".right-button");
-        this.leftBtn = item.querySelector(".left-button");
+
+        this.rightBtn = carousel.querySelector(".right-button");
+        this.leftBtn = carousel.querySelector(".left-button");
 
         this.images = Array.from(item.querySelectorAll(".carousel-image"));
 
+        // const startImage = this.images.map(("car"))
+
         this.currentIndex = 0;
         this.defaultImage = this.images[this.currentIndex];
+        this.images.forEach(function (img) {
+            img.style.display = 'none';
+        });
         this.defaultImage.style.display = "block";
 
-        //Events on Button
         this.rightBtn.addEventListener("click", () => this.showNextImg());
         this.leftBtn.addEventListener("click", () => this.showBeforeImg());
 
@@ -25,7 +30,7 @@ class Carousel {
                 img.style.display = "none";
             });
 
-            this.currentIndex +- 1;
+            this.currentIndex ++;
 
             if (this.currentIndex > allImages.length - 1) {
                 this.currentIndex = 0;
@@ -53,6 +58,6 @@ class Carousel {
         }
 
 
+let carousel = document.querySelector(".carousel-section");
 
-
-let carousel = new Carousel (document.querySelector(".carousel"));
+new Carousel (carousel);
