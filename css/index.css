@@ -560,6 +560,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 10px;
 }
 .container .section3 .steps .subsection .section-text {
   display: flex;
@@ -567,7 +568,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 20px 0;
 }
 .container .carousel {
   width: 100%;
