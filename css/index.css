@@ -176,7 +176,7 @@ h4 {
 }
 p {
   line-height: 1.8;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding-bottom: 10px;
 }
 img {
@@ -241,8 +241,6 @@ img {
     display: flex;
     justify-content: center;
   }
-}
-@media (max-width: 500px) {
 }
 .container .nav-bar {
   display: flex;
@@ -346,7 +344,7 @@ img {
 }
 @media (max-width: 500px) {
   .container .home {
-    width: 100%;
+    align-items: center;
   }
 }
 .container .home .hero {
@@ -416,23 +414,22 @@ img {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 40px 0px;
-  margin: 40px 20px;
+  padding: 120px 0px 140px 0;
   border-bottom: 0.5px solid lightgrey;
 }
 @media (max-width: 500px) {
   .container .section1 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0;
+    padding: 60px 0;
+    width: 80%;
   }
 }
 .container .section1 .sectiontext {
   display: flex;
   flex-direction: column;
   padding-left: 40px;
-  width: 45%;
+  width: 55%;
 }
 @media (max-width: 500px) {
   .container .section1 .sectiontext {
@@ -440,8 +437,8 @@ img {
   }
 }
 .container .section1 .intro-img {
-  width: 45%;
-  height: 45%;
+  width: 40%;
+  height: 40%;
 }
 @media (max-width: 500px) {
   .container .section1 .intro-img {
@@ -452,16 +449,15 @@ img {
 .container .section2 {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0px;
-  margin: 40px 20px;
+  padding: 160px 0px 160px 0;
   border-bottom: 0.5px solid lightgrey;
 }
 @media (max-width: 500px) {
   .container .section2 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 40px 0;
+    width: 80%;
+    padding: 60px 0;
   }
 }
 .container .section2 .sectiontext {
@@ -496,14 +492,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px;
-  margin: 40px 20px 60px 20px;
+  padding: 140px 0 140px 0;
   width: 100%;
   border-bottom: 0.5px solid lightgrey;
 }
 @media (max-width: 500px) {
   .container .section3 {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 }
 @media (max-width: 500px) {
@@ -519,6 +514,7 @@ img {
   .container .section3 .steps {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
   .container .section3 .steps .subsection {
     display: flex;
@@ -548,11 +544,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 120px 0;
 }
 @media (max-width: 500px) {
   .container .carousel {
-    width: 100%;
     padding: 40px 0;
   }
 }
@@ -563,7 +558,7 @@ img {
 }
 @media (max-width: 500px) {
   .container .carousel .carousel-section {
-    width: 100%;
+    width: 80%;
   }
 }
 .container .carousel .left-button {
@@ -581,6 +576,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-content: center;
   background-color: #ED7470;
   color: #FFFFFF;
   width: 100%;
@@ -681,7 +677,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 10px;
+  margin: 40px 0px;
   padding: 80px 0;
   border-bottom: 0.5px solid lightgrey;
 }
@@ -689,10 +685,6 @@ img {
   .team {
     width: 90%;
   }
-}
-.team h2 {
-  display: flex;
-  justify-content: center;
 }
 .team p {
   width: 80%;
@@ -710,7 +702,7 @@ img {
 .home .headshots {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 20px 0;
   flex-wrap: wrap;
 }
 .home .headshots .headshot {

@@ -1,7 +1,7 @@
 .container {
 
   @media @mobile {
-    // .width-100();
+
   }
 
   .nav-bar {
@@ -113,7 +113,7 @@
     justify-content: space-between;
 
     @media @mobile {
-      width: 100%;
+      align-items: center;
      }
 
 
@@ -190,22 +190,21 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
-      padding: 40px 0px;
-      margin: 40px 20px;
+      padding: 120px 0px 140px 0;
       border-bottom: 0.5px solid lightgrey;
 
       @media @mobile {
         display: flex;
         flex-direction: column;
-        .width-100();
-        margin: 0;
+        padding: 60px 0;
+        width:80%;
       }
 
       .sectiontext {
         display: flex;
         flex-direction: column;
         padding-left: 40px;
-        width: 45%;
+        width: 55%;
 
         @media @mobile {
           .width-100();
@@ -213,8 +212,8 @@
       }
 
       .intro-img {
-        width: 45%;
-        height: 45%;
+        width: 40%;
+        height: 40%;
 
         @media @mobile {
           .width-100();
@@ -227,15 +226,14 @@
     .section2 {
       display: flex;
       justify-content: space-between;
-      padding: 100px 0px;
-      margin: 40px 20px;
+      padding: 160px 0px 160px 0;
       border-bottom: 0.5px solid lightgrey;
 
       @media @mobile {
         display: flex;
         flex-direction: column;
-        .width-100();
-        padding: 40px 0;
+        width:80%;
+        padding: 60px 0;
       }
 
       .sectiontext {
@@ -274,13 +272,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 100px 0px;
-      margin: 40px 20px 60px 20px;
+      padding: 140px 0 140px 0;
       width:100%;
       border-bottom: 0.5px solid lightgrey;
 
       @media @mobile {
-         padding: 40px 0;
+         padding: 60px 0;
       }
 
       h2 {
@@ -297,6 +294,7 @@
       @media @mobile {
         display: flex;
         flex-direction: column;
+        width: 80%;
 
         .subsection {
           display: flex;
@@ -331,10 +329,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 40px 0;
+      margin: 120px 0;
 
       @media @mobile {
-        .width-100();
         padding: 40px 0;
       }
 
@@ -344,7 +341,7 @@
         justify-content: center;
 
         @media @mobile {
-          .width-100();
+          width:80%;
 
         }
 
@@ -370,6 +367,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-content: center;
       background-color: @highlight-color;
       color: @header-color;
       width: 100%;
@@ -380,6 +378,10 @@
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
+
+        h4 {
+
+        }
 
         .phone {
           font-size: 1.5rem;
