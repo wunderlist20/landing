@@ -202,6 +202,14 @@ img {
 .filters .title {
   font-size: 2rem;
   margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filters .title .commentary {
+  font-style: italic;
+  font-size: 1.7rem;
+  color: gray;
 }
 .filters .topics {
   padding: 40px 0;
@@ -368,6 +376,16 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .container .home .hero-text {
@@ -538,6 +556,14 @@ img {
   justify-content: center;
   align-items: center;
 }
+.container .section3 .steps .subsection .section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+}
 .container .carousel {
   width: 100%;
   display: flex;
@@ -548,13 +574,19 @@ img {
 }
 @media (max-width: 500px) {
   .container .carousel {
-    padding: 40px 0;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  .container .carousel .sectiontext {
+    width: 60%;
   }
 }
 .container .carousel .carousel-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   .container .carousel .carousel-section {
@@ -562,14 +594,26 @@ img {
   }
 }
 .container .carousel .left-button {
-  font-size: 5rem;
+  font-size: 7rem;
+}
+@media (max-width: 500px) {
+  .container .carousel .left-button {
+    font-size: 4rem;
+  }
 }
 .container .carousel .right-button {
-  font-size: 5rem;
+  font-size: 7rem;
+}
+@media (max-width: 500px) {
+  .container .carousel .right-button {
+    font-size: 4rem;
+  }
 }
 .container .carousel .carousel-image {
   width: 100%;
   height: auto;
+  margin: 20px 30px;
+  border-radius: 10px;
 }
 .bottom-section {
   height: 300px;

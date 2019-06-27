@@ -1,9 +1,5 @@
 .container {
 
-  @media @mobile {
-
-  }
-
   .nav-bar {
     display: flex;
     flex-direction: row;
@@ -138,6 +134,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @keyframes slide-right {
+    from {
+      margin-left: -100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+      }
 
         @media @mobile {
           .width-100();
@@ -319,6 +327,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+          .section-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-top: 20px;
+
+
+          }
         }
       }
     }
@@ -332,32 +351,49 @@
       margin: 120px 0;
 
       @media @mobile {
-        padding: 40px 0;
+        padding: 20px 0;
+      }
+
+      .sectiontext {
+        @media @mobile {
+          width: 60%;
+        }
+
       }
 
       .carousel-section {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 20px;
 
         @media @mobile {
           width:80%;
-
         }
 
       }
 
       .left-button {
-        font-size: 5rem;
+        font-size: 7rem;
+
+        @media @mobile {
+          font-size: 4rem;
+        }
       }
 
       .right-button {
-        font-size: 5rem;
+        font-size: 7rem;
+
+        @media @mobile {
+          font-size: 4rem;
+        }
       }
 
       .carousel-image {
         width:100%;
         height: auto;
+        margin: 20px 30px;
+        border-radius: 10px;
         }
       }
 }
