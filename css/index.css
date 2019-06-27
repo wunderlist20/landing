@@ -596,6 +596,9 @@ img {
 .container .carousel .left-button {
   font-size: 7rem;
 }
+.container .carousel .left-button:hover {
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .container .carousel .left-button {
     font-size: 4rem;
@@ -603,6 +606,9 @@ img {
 }
 .container .carousel .right-button {
   font-size: 7rem;
+}
+.container .carousel .right-button:hover {
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .container .carousel .right-button {
