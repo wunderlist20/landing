@@ -8,8 +8,6 @@ class Carousel {
 
         this.images = Array.from(item.querySelectorAll(".carousel-image"));
 
-        // const startImage = this.images.map(("car"))
-
         this.currentIndex = 0;
         this.defaultImage = this.images[this.currentIndex];
         this.images.forEach(function (img) {
