@@ -6,7 +6,7 @@
     justify-content: space-around;
     align-content: center;
     width: 800px;
-    margin-top: 20px;
+    padding: 20px 0;
 
 
     @media @mobile {
@@ -14,6 +14,8 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
+      padding: 20px 0 40px 0;
+      border-bottom: 1px dotted @background-color;
     }
 
     .logo {
@@ -125,6 +127,7 @@
         background-color: @background-color;
         color: @header-color;
         .width-100();
+        margin: 0;
         }
       }
 
@@ -135,15 +138,17 @@
         justify-content: center;
         align-items: center;
 
+        animation-name: slide-right;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        overflow: hidden;
         @keyframes slide-right {
     from {
       margin-left: -100%;
-      width: 300%;
     }
 
     to {
       margin-left: 0%;
-      width: 100%;
     }
       }
 
@@ -302,7 +307,7 @@
       @media @mobile {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
 
         .subsection {
           display: flex;
@@ -333,7 +338,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 100%;
             margin-top: 20px;
 
 
