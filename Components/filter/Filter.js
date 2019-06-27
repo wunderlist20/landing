@@ -2,7 +2,6 @@ class FilterLink {
   constructor(filterElement){
     this.filterElement = filterElement;
     this.filterData = this.filterElement.dataset.tab;
-    console.log(this.filterElement.dataset.tab);
 
     if(this.filterData === 'all'){
       this.headshots = document.querySelectorAll('.headshot');
