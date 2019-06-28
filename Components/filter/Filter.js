@@ -1,3 +1,5 @@
+
+
 class FilterLink {
   constructor(filterElement){
     this.filterElement = filterElement;
@@ -43,3 +45,4 @@ class FilterHeadshot {
 
 
 let filters = document.querySelectorAll('.filter').forEach(filters => new FilterLink(filters));
+console.log(filters);
