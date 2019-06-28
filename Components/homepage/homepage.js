@@ -3,8 +3,8 @@ class Carousel {
 
         this.item = item;
 
-        this.rightBtn = document.querySelector(".right-button");
-        this.leftBtn = document.querySelector(".left-button");
+        this.rightBtn = item.querySelector(".right-button");
+        this.leftBtn = item.querySelector(".left-button");
 
         this.images = Array.from(item.querySelectorAll(".carousel-image"));
 
