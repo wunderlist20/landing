@@ -22,9 +22,9 @@ class Carousel {
 
 
         showNextImg() {
-            let allImages = document.querySelectorAll(".carousel-image");
+            // let allImages = document.querySelectorAll(".carousel-image");
 
-            allImages.forEach(function (img) {
+            this.images.forEach(function (img) {
                 img.style.display = "none";
             });
 
@@ -39,9 +39,9 @@ class Carousel {
 
 
         showBeforeImg() {
-            let allImages = document.querySelectorAll(".carousel-image");
+            // let allImages = document.querySelectorAll(".carousel-image");
 
-            allImages.forEach(function (img) {
+            this.images.forEach(function (img) {
                 img.style.display = "none";
             });
 
