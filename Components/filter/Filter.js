@@ -45,4 +45,3 @@ class FilterHeadshot {
 
 
 let filters = document.querySelectorAll('.filter').forEach(filters => new FilterLink(filters));
-console.log(filters);
