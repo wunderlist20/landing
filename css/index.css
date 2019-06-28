@@ -397,6 +397,9 @@ img {
     width: 100%;
     align-content: center;
   }
+  .container .home .hero-text h1 {
+    margin-left: 60px 0;
+  }
 }
 .container .home .hero-text h1 {
   margin: 10px;
@@ -445,7 +448,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 60px 0;
-    width: 80%;
+    width: 90%;
   }
 }
 .container .section1 .sectiontext {
@@ -456,6 +459,7 @@ img {
 }
 @media (max-width: 500px) {
   .container .section1 .sectiontext {
+    padding-left: 0;
     width: 100%;
   }
 }
@@ -493,6 +497,7 @@ img {
   .container .section2 .sectiontext {
     width: 100%;
     margin-top: 10px;
+    padding-right: 0;
   }
 }
 @media (max-width: 500px) {
@@ -740,6 +745,11 @@ img {
 @media (max-width: 500px) {
   .team {
     width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .team h2 {
+    margin-left: 40px;
   }
 }
 .team p {
